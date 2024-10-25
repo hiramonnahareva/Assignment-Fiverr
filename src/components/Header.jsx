@@ -12,13 +12,13 @@ const Header = () => {
         {
             id: 1,
             title: "Features",
-            url: "/",
+            url: "/features",
 
         },
         {
             id: 2,
             title: "Experiences",
-            url: "/",
+            url: "/experiences",
 
         },
 
@@ -44,23 +44,24 @@ const Header = () => {
            <h2 className="text-2xl">DEW</h2>
            <ul className="lg:flex items-center justify-center gap-6  text-[18px] hidden">
             {link}
-            <button className="bg-white my-0 text-black hover:bg-gray-200 ">Login</button>
+            <button className="bg-white my-0 text-black hover:bg-gray-400">Login</button>
             <button className="my-0">Signin</button>
            </ul>
 
            {/* --------- mobile ----------- */}
 
-           <div onClick={() => setClick(!click)} className="lg:hidden" >
+           <div onClick={() => setClick(!click)} className="lg:hidden " >
             <div className="flex flex-col gap-2 absolute top-3 z-50">
                 <div className={`${click && 'absolute top-1 rotate-45'} menubar w-6`}></div>
                 <div className={`${click && 'hidden'} menubar w-4`}></div>
                 <div className={`${click && 'absolute top-1 -rotate-45'} menubar w-6`}></div>
             </div>
             <div className={`${click ? 'w-60% visible' : 'invisible'}`}>
-                <ul className= {`flex flex-col gap-6 text-[18px] bg-white text-black transition-all h-[100vh]  ${click ? 'w-[80%] translate-x-0' : 'translate-x-full' } duration-700 top-0 bottom-0 right-0 z-20 fixed p-20`}>
+                <ul className= {`flex flex-col gap-6 text-[18px] bg-gray-200 text-black transition-all h-[100vh]  ${click ? 'w-[80%] translate-x-0' : 'translate-x-full' } duration-700 top-0 bottom-0 right-0 z-20 fixed p-20`}>
                     {link}
 
-                    <button>Login</button>
+                    <button className="bg-white my-0 text-black hover:bg-gray-400 ">Login</button>
+                    <button className="my-0">Signin</button>
 
                 </ul>
             </div>

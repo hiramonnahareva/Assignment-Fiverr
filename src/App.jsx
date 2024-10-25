@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 // import TravelPreferences from "./TravelPreference";
 // import Hero from "../Home";
 import Footer from "./components/Footer";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Header from "./components/Header";
 
 function App() {
