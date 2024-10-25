@@ -1,5 +1,10 @@
 import ContentCard from "./ContentCard";
-import img from '../assets/banner.jpg';
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img2.jpg';
+import img3 from '../assets/img3.jpg';
+import img4 from '../assets/img4.jpg';
+import img5 from '../assets/img5.webp';
+import img6 from '../assets/img6.webp';
 
 
 
@@ -7,7 +12,7 @@ const Content = () => {
     const content = [
         {
           id: 1,
-          img: img,
+          img: img1,
           destination: "Lisbon, Portugal",
           description: "A vibrant city known for its friendly locals, stunning architecture, and rich history.",
           tips: ["Learn a few basic Portuguese phrases.", "Stay in a hostel to meet other travelers."],
@@ -16,7 +21,7 @@ const Content = () => {
         },
         {
           id: 2,
-          img: img,
+          img: img2,
           destination: "Kyoto, Japan",
           description: "A serene city filled with temples, gardens, and traditional tea houses.",
           tips: ["Use public transport for easy navigation.", "Try to participate in a tea ceremony."],
@@ -25,7 +30,7 @@ const Content = () => {
         },
         {
           id: 3,
-          img: img,
+          img: img3,
           destination: "Barcelona, Spain",
           description: "A bustling city famous for its art, architecture, and beaches.",
           tips: ["Stay alert in crowded areas.", "Join a walking tour to meet fellow travelers."],
@@ -34,7 +39,7 @@ const Content = () => {
         },
         {
           id: 4,
-          img: img,
+          img: img4,
           destination: "Iceland",
           description: "A nature lover's paradise with stunning landscapes, waterfalls, and geothermal springs.",
           tips: ["Rent a car for the best experience.", "Stay in guesthouses to meet locals."],
@@ -43,7 +48,7 @@ const Content = () => {
         },
         {
           id: 5,
-          img: img,
+          img: img5,
           destination: "Chiang Mai, Thailand",
           description: "A laid-back city known for its temples, street markets, and outdoor adventures.",
           tips: ["Try a cooking class to learn about Thai cuisine.", "Be open to meeting locals."],
@@ -52,7 +57,7 @@ const Content = () => {
         },
         {
           id: 6,
-          img: img,
+          img: img6,
           destination: "Vancouver, Canada",
           description: "A cosmopolitan city surrounded by stunning natural beauty, perfect for outdoor enthusiasts.",
           tips: ["Explore Stanley Park on foot or bike.", "Join local tours to meet other travelers."],
