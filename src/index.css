@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    @apply text-[18px]
+}
+
+.navlink {
+    @apply hover:text-gray-900 cursor-pointer transition-all duration-300 relative my-4
+  }
+  .navlink::after {
+    @apply content-[''] bg-gray-900 h-[2px] w-[0%] absolute -left-0 -bottom-0 duration-300 rounded-full
+  }
+  .navlink:hover::after{
+    @apply w-[80%]
+  }
+  .menubar {
+    @apply bg-black h-[2px] transition-all duration-700
+  }
+
+.title {
+    @apply text-5xl font-bold text-gray-950
+  }
+
+  button {
+    @apply bg-gray-900 hover:bg-gray-950 text-white transition-colors duration-300 px-[42px] py-2 rounded-md text-[18px] my-[30px]
+  }
+
+  .line {
+    @apply w-[10px] h-[2px] bg-gray-900 transition-all duration-700
+  }
+
+  
