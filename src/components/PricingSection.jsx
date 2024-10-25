@@ -6,6 +6,7 @@ import {
   CardBody,
   CardHeader,
 } from "@material-tailwind/react";
+import FeatureList from "./FeatureList";
 // import { CheckCircleIcon } from "@heroicons/react/24/solid";
 // import { MinusCircleIcon } from "@heroicons/react/24/outline";
 
@@ -185,14 +186,16 @@ export function PartnershipPricing() {
           ))}
         </div>
         <div className="mt-16 text-center">
-          <Typography variant="small" className="text-5xl font-bold">
+          <Typography variant="small" className="text-5xl font-bold mb-10">
             Why Partner with DEW?
           </Typography>
-          <ul className="mt-16 flex flex-col items-start lg:mx-96 list-disc list-inside text-lg text-gray-600">
+          {/* <ul className="mt-16 flex flex-col items-start lg:mx-96 list-disc list-inside text-lg text-gray-600">
             <li className="text-start"><strong>Boost Your Visibility:</strong> <br/> Gain exposure to tourists and locals looking for tailored weekend plans.</li>
             <li className="text-start"><strong>Drive More Bookings:</strong> <br/> Direct links to your reservations or offers make it easier for customers to choose you.</li>
             <li className="text-start"><strong>Tailored Advertising:</strong> <br/> DEW's AI ensures your business is recommended to users most likely to visit, maximizing your marketing spend.</li>
-          </ul>
+          </ul> */}
+
+          <FeatureList/>
         </div>
         <div className="mt-10 text-center">
           <Typography variant="small" className="text-[18px] font-normal !text-gray-500">
